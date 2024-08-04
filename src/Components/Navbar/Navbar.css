@@ -1,16 +1,24 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: #B18316;
     overflow: hidden;
+    position: sticky;
+    left: 220px;
+    width: 75%;
+    top: 10px;
+    border-radius: 50px;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    display: block;
+    position: relative;
+    font-weight: 20px;
+    top: 30px;
+    left: 490px;
+    border-radius: 40px;
+    gap: 20px;
     color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -23,11 +31,30 @@
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: #04AA6D;
+    /* background-color: #04AA6D; */
     color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
+}
+
+.Logo {
+    width: 150px;
+    float: left;
+    height: 85px;
+    border-radius: 30px;
+}
+
+.nav-list {
+    color: white;
+    font-family: "Georgia", serif;
+    font-size: 18px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.navbar-item:hover {
+    text-decoration: underline;
 }

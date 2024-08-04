@@ -1,0 +1,12 @@
+body {
+    background-color: white;
+}
+
+.description-2 {
+    position: relative;
+    bottom: 500px;
+    font-family: "Georiga", serif;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 30px;
+}

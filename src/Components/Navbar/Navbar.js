@@ -1,15 +1,16 @@
 import "./Navbar.css";
 
+import Logo from "../../Assets/C4.png";
+
 const Navbar = () => {
     return (
         <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+            <img src={Logo} alt="Logo" className="Logo"/>
+            <a href="/" class="active">Home</a>
+            <a className="nav-list" href="Products">Products</a>
+            <a className="nav-list" href="contact">Contact</a>
+            <a className="nav-list" href="about">About</a>
+            <a className="nav-list" href="Shop">Shop</a>
         </div>
     );
 };
