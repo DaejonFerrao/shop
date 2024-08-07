@@ -4,7 +4,7 @@ import Fruit2 from "../../Assets/Fruit2.png";
 
 const Products = () => {
     return (
-        <div className="home">
+        <div className="Products">
         <div>
         <img src={Fruit2} alt="Fruit2" className="fruit"/>
         </div>
@@ -22,7 +22,7 @@ const Products = () => {
         lifestyle. 
         </p>
         <div className="button-container">
-            <button className="button">View our products</button>
+            <button className="product-button">View our products</button>
         </div>
     </div>
     );

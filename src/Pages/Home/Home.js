@@ -16,8 +16,8 @@ const Home = () => {
             from the farm to your table.
             </p>
             <div className="button-container">
-                <button className="button">products</button>
-                <button className="button">Services</button>
+                <button className="home-button">Products</button>
+                <button className="home-button">Services</button>
             </div>
         </div>
     );

@@ -4,10 +4,8 @@ const ContactUs = () => {
     return (
         <div>
         <div className='enquiry-title'>Need some help</div>
-        <div className="enquiry-desc">we are available to help.we are available to help.we are available to help.<br></br>
-            we are available to help.we are available to help.we are available to help.we are available to help.<br></br>
-            we are available to help.we are available to help.we are available to help.we are available to help.<br></br>
-            we are available to help.
+        <div className="enquiry-desc">Please send us any questions or concerns that<br></br> 
+            you may have, we will be happy to assist or help with any errors. 
         </div>
         <form className="Enquiry">
             <div className="contact">Contact Us</div>

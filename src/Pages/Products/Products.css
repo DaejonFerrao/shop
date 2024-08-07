@@ -10,3 +10,28 @@ body {
     color: #000;
     margin-bottom: 30px;
 }
+
+.Products {
+    position: relative;
+    right: 430px;
+    background-color: #bcbcbc;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    height: 550px;
+}
+
+.product-button {
+    position: relative;
+    bottom: 50px;
+    background-color: #a67924;
+    color: white;
+    font-family: "Kavoon", serif;
+    font-size: 18px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
