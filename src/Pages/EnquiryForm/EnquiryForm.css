@@ -1,0 +1,115 @@
+
+.enquiry-title {
+    position: relative;
+    left: 200px;
+    top: 50px;
+    font-size: 25px;
+}
+
+.enquiry-desc {
+    position: relative;
+    left: 200px;
+    top: 60px;
+    font-size: 19px;
+}
+
+.Enquiry {
+    height: 400px;
+    left: 100px;
+    position: relative;
+    top: 130px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.Enquiry input,
+.Enquiry textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    font-size: 16px;
+}
+
+.Enquiry input::placeholder,
+.Enquiry textarea::placeholder {
+    color: #aaa;
+}
+
+
+.Enquiry .half-width {
+    width: calc(50% - 10px);
+}
+
+.Equiry .half-width:first-child {
+    margin-right: 20px;
+}
+
+.Equiry .row {
+    display: flex;
+    padding: 40px;
+}
+
+.row-fname  {
+    bottom: 20px;
+    display: flex;
+    position: relative;
+    left: 100px;
+    width: 15%;
+}
+
+.row-lname {
+    position: relative;
+    bottom: 65px;
+    left: 380px;
+    display: flex;
+    width: 15%;
+}
+
+.row-email {
+    position: relative;
+    bottom: 30px;
+    left: 100px;
+    width: 15%;
+}
+
+.row-quantity {
+    position: relative;
+    width: 15%;
+    left: 380px;
+}
+
+.row-product {
+    position: relative;
+    bottom: 40px;
+    width: 15%;
+    left: 100px;
+}
+
+.row-message {
+    position: relative;
+    bottom: 10px;
+    width: 300px;
+    left: 100px;
+    height: 150px;
+}
+
+.enquiry-button {
+    background-color: #a67924;
+    color: white;
+    font-family: "Geogria", serif;
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+    font-size: 18px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
