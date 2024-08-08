@@ -1,6 +1,7 @@
 import "./Products.css";
 
 import Fruit2 from "../../Assets/Fruit2.png";
+import Button from "../../Components/Button/Button";
 
 const Products = () => {
     return (
@@ -22,7 +23,7 @@ const Products = () => {
         lifestyle. 
         </p>
         <div className="button-container">
-            <button className="product-button">View our products</button>
+            <Button path="/Shop" text="View Our Products" />
         </div>
     </div>
     );

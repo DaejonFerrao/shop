@@ -1,6 +1,8 @@
 import "./Button.css";
 
-const Button = () => {
+import { useNavigate } from "react-router-dom";
+
+const Button = ({ text, path="", onClickFn}) => {
     const navigateTo = useNavigate(); 
 
     if (!path) {

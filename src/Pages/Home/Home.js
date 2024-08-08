@@ -1,8 +1,13 @@
 import "./Home.css";
 
 import Fruit1 from "../../Assets/fruit1.png";
+import Button from "../../Components/Button/Button";
+
+
 
 const Home = () => {
+ 
+
     return (
         <div className="home">
             <div>
@@ -16,8 +21,8 @@ const Home = () => {
             from the farm to your table.
             </p>
             <div className="button-container">
-                <button className="home-button">Products</button>
-                <button className="home-button">Services</button>
+                <Button path="/Shop" text="Products"/>
+                <Button path="/Products" text="Services" />
             </div>
         </div>
     );

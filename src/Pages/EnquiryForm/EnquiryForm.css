@@ -1,5 +1,6 @@
 
 .enquiry-title {
+    color: #C6A95E;
     font-family: "Kavoon", serif;
     position: relative;
     left: 200px;
@@ -17,11 +18,11 @@
 
 .Enquiry {
     height: 400px;
-    left: 100px;
+    left: 90px;
     position: relative;
     top: 130px;
     background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
+    padding: 60px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 80%;
@@ -97,11 +98,13 @@
 
 .row-message {
     position: relative;
+    padding-bottom: 10px;
     bottom: 10px;
-    width: 300px;
+    width: 500px;
     left: 100px;
     height: 150px;
 }
+
 
 .enquiry-button {
     background-color: #a67924;

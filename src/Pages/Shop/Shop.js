@@ -7,12 +7,16 @@ import Veg3 from "../../Assets/Veg3.png"
 import Veg4 from "../../Assets/Veg4.png"
 import Veg5 from "../../Assets/Veg5.png"
 import Veg6 from "../../Assets/Veg6.png"
-import Navbar from '../../Components/Navbar/Navbar';
+
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const Shop = () => {
+
+    const navigateTo = useNavigate();
+
     return (
      <div>
-        {/* <Navbar /> */}
         <div className="final">
             <div className='test'>Our Products</div>
             <div className="information">
@@ -45,7 +49,8 @@ const Shop = () => {
             </div>
            <div>
             <div className='title-3'>Want to make an enquiry?</div>
-            <button className="button-1">Please enquire here</button>
+            <p><a className="button-1" onClick={() => navigateTo("/EnquiryForm")}>Enquire Now</a> </p>
+            {/* <button className="button-1">Please enquire here</button> */}
            </div>
         </div>
     </div>

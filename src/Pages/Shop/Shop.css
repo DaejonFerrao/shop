@@ -83,7 +83,7 @@
 
 .button-1 {
     position: relative;
-    left: 820px;
+    left: 840px;
     bottom: 650px;
     background-color: #a67924;
     color: white;
@@ -99,9 +99,9 @@
     position: relative;
     bottom: 670px;
     left: 700px;
-    font-family: "Georgia", serif;
+    font-family: "Kavoon", "serif";
     font-size: 36px;
     font-weight: bold;
-    color: #000;
+    color: #44680A;
     margin-bottom: 20px;
 }
