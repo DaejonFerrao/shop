@@ -1,4 +1,4 @@
-.row-name  {
+.row-name {
     font-family: "Kavoon", serif;
     bottom: 20px;
     display: flex;
@@ -43,4 +43,74 @@
     border: none;
     border-radius: 50px;
     cursor: pointer;
+}
+
+/* Responsive styling for tablets and small desktops */
+@media screen and (max-width: 1024px) {
+
+    .row-name,
+    .row-laname {
+        left: 50px;
+        width: 40%;
+    }
+
+    .row-laname {
+        left: 50px;
+        /* Align with row-name */
+        bottom: 20px;
+    }
+
+    .row-contactmessage {
+        width: 80%;
+        left: 50px;
+        height: 120px;
+    }
+
+    .contact {
+        font-size: 35px;
+        left: 50px;
+    }
+
+    .contact-button {
+        left: 50px;
+        padding: 15px 30px;
+    }
+}
+
+/* Responsive styling for mobile devices */
+@media screen and (max-width: 768px) {
+
+    .row-name,
+    .row-laname {
+        left: 0;
+        width: 90%;
+        margin: 0 auto;
+        bottom: 10px;
+    }
+
+    .row-laname {
+        bottom: 10px;
+    }
+
+    .row-contactmessage {
+        width: 100%;
+        left: 0;
+        margin: 0 auto;
+        height: 200px;
+    }
+
+    .contact {
+        font-size: 28px;
+        left: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-button {
+        left: 0;
+        width: 80%;
+        margin: 20px auto;
+        padding: 15px 30px;
+        text-align: center;
+    }
 }

@@ -3,7 +3,12 @@ import "./Products.css";
 import Fruit2 from "../../Assets/Fruit2.png";
 import Button from "../../Components/Button/Button";
 
+import { useNavigate } from "react-router-dom";
+
 const Products = () => {
+
+    const navigateTo = useNavigate();
+
     return (
         <div className="Products">
         <div>
@@ -23,7 +28,7 @@ const Products = () => {
         lifestyle. 
         </p>
         <div className="button-container">
-            <Button path="/Shop" text="View Our Products" />
+        <button className="product-button" onClick={() => navigateTo("/Shop")}>View Our Products</button> 
         </div>
     </div>
     );

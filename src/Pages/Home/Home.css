@@ -64,7 +64,7 @@ body {
 
 .home-button {
     position: relative;
-    bottom: 50px;
+    bottom: 90px;
     background-color: #a67924;
     color: white;
     font-family: "Kavoon", serif;
@@ -73,4 +73,84 @@ body {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+}
+
+/* Responsive styling for tablets and small desktops */
+@media screen and (max-width: 1024px) {
+    .home {
+        right: 0;
+        width: 90%;
+        padding: 40px;
+        height: auto;
+    }
+
+    .title {
+        bottom: 0;
+        font-size: 32px;
+    }
+
+    .description {
+        bottom: 0;
+        font-size: 28px;
+    }
+
+    .button-container {
+        bottom: 0;
+        gap: 15px;
+    }
+
+    .fruit {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 30px;
+    }
+
+    .home-button {
+        bottom: 30px;
+    }
+}
+
+/* Responsive styling for mobile devices */
+@media screen and (max-width: 768px) {
+    .home {
+        right: 0;
+        width: 100%;
+        padding: 30px;
+        height: auto;
+    }
+
+    .title {
+        bottom: 0;
+        font-size: 28px;
+    }
+
+    .description {
+        bottom: 0;
+        font-size: 24px;
+    }
+
+    .button-container {
+        bottom: 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+
+    .fruit {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        width: 80%;
+        /* Adjust as needed */
+    }
+
+    .home-button {
+        bottom: 20px;
+        padding: 15px 30px;
+        font-size: 16px;
+    }
 }

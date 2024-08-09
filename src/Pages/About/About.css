@@ -16,3 +16,50 @@
     height: 500px;
     transform: rotate(180deg)
 }
+
+/* Responsive styling for tablets and small desktops */
+@media screen and (max-width: 1024px) {
+    .About {
+        left: 0;
+        width: 90%;
+        padding: 40px;
+        margin: 30px auto;
+    }
+}
+
+/* Responsive styling for mobile devices */
+@media screen and (max-width: 768px) {
+    .About {
+        left: 0;
+        width: 100%;
+        padding: 30px;
+        margin: 20px auto;
+        box-shadow: none; /* Optionally remove shadow for a cleaner mobile look */
+    }
+}
+
+.fruit1 {
+    position: relative;
+    right: 1000px;
+    height: 500px;
+    transform: rotate(180deg);
+}
+
+/* Responsive styling for tablets and small desktops */
+@media screen and (max-width: 1024px) {
+    .fruit1 {
+        right: 500px;
+        height: 400px;
+    }
+}
+
+/* Responsive styling for mobile devices */
+@media screen and (max-width: 768px) {
+    .fruit1 {
+        right: 0;
+        height: 300px;
+        margin: 0 auto;
+        display: block;
+        transform: rotate(180deg); /* Maintain rotation on mobile */
+    }
+}

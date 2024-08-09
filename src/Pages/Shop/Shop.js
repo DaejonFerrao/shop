@@ -50,7 +50,6 @@ const Shop = () => {
            <div>
             <div className='title-3'>Want to make an enquiry?</div>
             <p><a className="button-1" onClick={() => navigateTo("/EnquiryForm")}>Enquire Now</a> </p>
-            {/* <button className="button-1">Please enquire here</button> */}
            </div>
         </div>
     </div>

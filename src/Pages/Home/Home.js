@@ -3,10 +3,11 @@ import "./Home.css";
 import Fruit1 from "../../Assets/fruit1.png";
 import Button from "../../Components/Button/Button";
 
-
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
  
+    const navigateTo = useNavigate();
 
     return (
         <div className="home">
@@ -21,8 +22,8 @@ const Home = () => {
             from the farm to your table.
             </p>
             <div className="button-container">
-                <Button path="/Shop" text="Products"/>
-                <Button path="/Products" text="Services" />
+                <button className="home-button" onClick={() => navigateTo("/Shop")}>Shop</button> 
+                <button className="home-button" onClick={() => navigateTo("/Products")}>Products</button> 
             </div>
         </div>
     );
