@@ -4,15 +4,19 @@ import Logo from "../../Assets/C4.png";
 
 const Navbar = () => {
     return (
-        <div class="topnav" id="myTopnav">
-            <img src={Logo} alt="Logo" className="Logo"/>
-            <a className="nav-list" href="/">Home</a>
-            <a className="nav-list" href="Products">Products</a>
-            <a className="nav-list" href="ContactUs">Contact</a>
-            <a className="nav-list" href="about">About</a>
-            <a className="nav-list" href="Shop">Shop</a>
-            <a className="nav-list" href="EnquiryForm">Enquiry</a>
+    <div>
+        <div>
+        <a href="/">  {/* This link navigates to the home page */}
+                <img src={Logo} alt="Logo" className="Logo" />
+            </a>
         </div>
+        <div className="topnav">
+            <a className="nav-list" href="about">About Us</a>
+            <a className="nav-list" href="Shop">Produce</a>
+            <a className="nav-list" href="ContactUs">Contact Us</a>
+            <a className="nav-list" href="EnquiryForm">Order Online</a>
+        </div>
+    </div>
     );
 };
 

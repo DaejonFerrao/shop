@@ -11,7 +11,7 @@ body {
     border-radius: 20px;
     max-width: 600px;
     margin: 50px auto;
-    height: 400px;
+    height: 700px;
 }
 
 .title {
@@ -60,11 +60,12 @@ body {
     position: relative;
     left: 700px;
     border-radius: 20px;
+    height: 520px;
 }
 
 .home-button {
     position: relative;
-    bottom: 90px;
+    bottom: -195px;
     background-color: #a67924;
     color: white;
     font-family: "Kavoon", serif;

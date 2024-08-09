@@ -4,8 +4,9 @@
     background-color: #B18316;
     overflow: hidden;
     left: 220px;
-    width: 75%;
-    top: 10px;
+    width: 100px;
+    height: 80px;
+    top: 40px;
     border-radius: 50px;
 }
 
@@ -41,8 +42,11 @@
 }
 
 .Logo {
+    position: relative;
+    left: 60px;
+    top: 50px;
     width: 150px;
-    float: left;
+    /* float: left; */
     height: 85px;
     border-radius: 30px;
 }
@@ -101,8 +105,11 @@
 }
 
 .Logo {
+    position: relative;
+    right: 400px;
+    bottom: 5px;
     width: 150px;
-    float: left;
+    /* float: left; */
     height: 85px;
     border-radius: 30px;
 }

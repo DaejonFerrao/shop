@@ -23,7 +23,7 @@ const Home = () => {
             </p>
             <div className="button-container">
                 <button className="home-button" onClick={() => navigateTo("/Shop")}>Shop</button> 
-                <button className="home-button" onClick={() => navigateTo("/Products")}>Products</button> 
+                <button className="home-button" onClick={() => navigateTo("/Products")}>Produce</button> 
             </div>
         </div>
     );
