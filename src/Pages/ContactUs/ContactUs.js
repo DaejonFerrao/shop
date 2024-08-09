@@ -21,7 +21,7 @@ const ContactUs = () => {
             </div>
             <div className='row-contactmessage'>
                 <label for="email" placeholder="Enter Email" name="email" required>
-                    <input type='text' placeholder='Message' name="psw" required />
+                    <input type='text' placeholder='Message' name="psw" required className="row-contactmessage" />
                 </label>
             </div>
             <button className="contact-button">SUMBIT</button>

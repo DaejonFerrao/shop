@@ -39,7 +39,7 @@ const EnquiryForm = () => {
                 </div>
                 <div className='row-message'>
                     <label for="email" placeholder="Enter Email" name="email" required>
-                        <input type='text' placeholder='Message' name="psw" required />
+                        <input type='text' placeholder='Message' name="psw" required className='row-message'/>
                     </label>
                 </div>
                 <button className='enquiry-button'>Send A Request</button>
