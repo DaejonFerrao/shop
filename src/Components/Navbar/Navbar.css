@@ -3,12 +3,13 @@
     position: fixed;
     background-color: #B18316;
     overflow: hidden;
-    top: 0;
+    top: 20px;
     left: 800px;
     width: 28%;
     height: 80px;
-    bottom: 30px;
+    bottom: 20px;
     border-radius: 50px;
+    z-index: 1000;
 }
 
 /* Style the links inside the navigation bar */
@@ -43,13 +44,14 @@
 }
 
 .Logo {
+    z-index: 1000;
     position: fixed;
     left: 590px;
-    padding: 10px;
+    padding: 20px;
     top: 0;
     width: 150px;
     height: 85px;
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 .nav-list {

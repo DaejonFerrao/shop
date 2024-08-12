@@ -122,6 +122,7 @@
 }
 
 .header {
+    top: 50px;
     position: relative;
     left: 950px;
     font-size: 30px;

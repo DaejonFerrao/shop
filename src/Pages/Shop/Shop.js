@@ -8,6 +8,10 @@ import Veg4 from "../../Assets/Veg4.png"
 import Veg5 from "../../Assets/Veg5.png"
 import Veg6 from "../../Assets/Veg6.png"
 
+import Passion from "../../Assets/passion.png";
+import Coconuts from "../../Assets/coconuts.png";
+import Cashew from "../../Assets/cashew.png";
+
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -18,22 +22,21 @@ const Shop = () => {
     return (
      <div>
         <div className="final">
-            <div className='test'>Produce</div>
+            {/* <div className='test'>Produce</div> */}
             <div className="information">
-                Fresh and delicious, our fruits and handpicked<br></br>
-                to provide the best quality and flavour.
+               Take a look at our Produce
             </div>
             <div className="article">
-                <img src={Veg1} alt="Veg1" className="picture" />
-                <header>Yam</header>
+                <img src={Cashew} alt="Veg1" className="picture-1" />
+                <header className="name">Cashew Nuts</header>
             </div>
             <div className="article-2">
-            <img src={Veg2} alt="Veg1" className="picture" />
-                <header>Cashew Nuts</header>
+            <img src={Coconuts} alt="Veg1" className="picture-2" />
+                <header className='name-1'>Coconuts</header>
             </div>
             <div className="article-3">
-            <img src={Veg3} alt="Veg1" className="picture" />
-                <header>Birdseye Chilies</header>
+            <img src={Passion} alt="Veg1" className="picture-3" />
+                <header className='name-2'>Passion Fruit</header>
             </div>
             <div className="article-4">
             <img src={Veg4} alt="Veg1" className="picture" />

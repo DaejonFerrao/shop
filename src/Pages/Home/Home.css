@@ -4,9 +4,9 @@ body {
 
 .home {
     position: relative;
-    top: 30px;
+    top: 50px;
     right: 430px;
-    background-color: #bcbcbc;
+    background-color: white;
     padding: 50px;
     text-align: center;
     border-radius: 20px;
@@ -15,25 +15,28 @@ body {
     height: 800px;
 }
 
-.title {
+.title1 {
     position: relative;
-    bottom: 500px;
+    bottom: 600px;
+    left: 500px;
     font-family: "Kavoon", "serif";
-    font-size: 36px;
+    font-size: 50px;
     font-weight: bold;
-    color: #000;
+    color: #a67924;
     margin-bottom: 20px;
 }
 
-.description {
+.description1 {
     position: relative;
-    bottom: 500px;
+    bottom: 600px;
+    left: 500px;
     font-size: 32px;
-    color: #000;
+    font-family: "Kavoon", "serif";
+    color: white;
     margin-bottom: 30px;
 }
 
-.button-container {
+.button-container1 {
     position: relative;
     bottom: 400px;
     display: flex;
@@ -59,14 +62,26 @@ body {
 .fruit {
     bottom: 50px;
     position: relative;
-    left: 700px;
+    left: 50px;
     border-radius: 20px;
-    height: 520px;
+    height: 720px;
+    width: 1400px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    height: 720px;
+    width: 1400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
 }
 
 .home-button {
     position: relative;
-    bottom: -195px;
+    bottom: 100px;
+    left: 497px;
     background-color: #a67924;
     color: white;
     font-family: "Kavoon", serif;

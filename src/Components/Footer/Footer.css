@@ -1,23 +1,23 @@
 .footer {
     position: relative;
     /* left: 300px; */
-    bottom: 200px;
+    top: 100px;
     text-decoration: none;
     height: 70px;
-    width: 95%;
-    background-color: #bcbcbc;
+    width: 100%;
+    background-color: #B18316;
     color: white;
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
 
 .footer a {
     position: relative;
     font-weight: 20px;
     top: 30px;
-    left: 490px;
+    left: 790px;
     border-radius: 40px;
-    gap: 20px;
-    color: #f2f2f2;
+    gap: 40px;
+    color: white;
     padding: 16px 16px;
     text-decoration: none;
     font-size: 17px;

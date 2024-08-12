@@ -1,22 +1,32 @@
 import "./About.css";
 
-import Fruit1 from "../../Assets/fruit3.png"
+import Fruit1 from "../../Assets/storage.png"
+import tick from "../../Assets/tick.png"
+import boxes from "../../Assets/boxes.png"
+import bucket from "../../Assets/bucket.png"
 
 const About = () => {
     return (
         <div className="About">
         <div>
-        <img src={Fruit1} alt="Fruit1" className="fruit1"/>
+        <img src={Fruit1} alt="Fruit1" className="storage"/>
         </div>
-        <h1 className="title">Uncover the Best in Fresh Produce</h1>
+        <h1 className="title">Who we are?</h1>
         <p className="description">
-        Cedi Fruit and Veg is your go-to source for fresh, 
-        local and natural produce. We pride ourselves on 
-        delivering high-quality fruits and vegetables straight 
-        from the farm to your table.
+            We pride ourselves on delivering 
+            high-quality fruits and
+            vegetables straight from the farm to your table
         </p>
+        <div className="property">
+            <img src={tick} alt="tick" className="tick" />
+            <p className="tick-description">Only the finest produce, handpicked for your table</p>
+            <img src={bucket} alt="tick" className="tick" />
+            <p className="tick-description">Fresh fruits and veggies, packed with flavour</p>
+            <img src={boxes} alt="tick" className="tick" />
+            <p className="tick-description">Top-grade produce, reliably delivered</p>
+        </div>
         <div className="button-container">
-            <button className="button">Read More</button>
+            <button className="about-button">View Our Produce</button>
         </div>
     </div>
     );
