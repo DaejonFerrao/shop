@@ -18,7 +18,7 @@ const Shop = () => {
     return (
      <div>
         <div className="final">
-            <div className='test'>Our Products</div>
+            <div className='test'>Produce</div>
             <div className="information">
                 Fresh and delicious, our fruits and handpicked<br></br>
                 to provide the best quality and flavour.

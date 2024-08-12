@@ -17,8 +17,8 @@ const Home = () => {
             <h1 className="title">Welcome to Cedi Fruit and Veg</h1>
             <p className="description">
             Cedi Fruit and Veg is your go-to source for fresh, 
-            local and natural produce. We pride ourselves on 
-            delivering high-quality fruits and vegetables straight 
+            local and natural produce.<br></br> We pride ourselves on 
+            delivering<br></br> high-quality fruits and vegetables straight 
             from the farm to your table.
             </p>
             <div className="button-container">

@@ -121,6 +121,14 @@
     cursor: pointer;
 }
 
+.header {
+    position: relative;
+    left: 950px;
+    font-size: 30px;
+    font-family: "Kavoon", serif;
+    color: #a67924;
+}
+
 /* Responsive styling for tablets and small desktops */
 @media screen and (max-width: 1024px) {
 

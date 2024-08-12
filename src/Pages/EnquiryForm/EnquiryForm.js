@@ -5,7 +5,8 @@ import Veg1 from "../../Assets/Veg2.png"
 
 const EnquiryForm = () => {
     return (
-
+        <div>
+            <p className='header'>Order Online</p>
         <div>
             <div className='enquiry-title'>Request a Quote</div>
             <div className="enquiry-desc">Make an inquiry personal for you.
@@ -44,6 +45,7 @@ const EnquiryForm = () => {
                 </div>
                 <button className='enquiry-button'>Send A Request</button>
             </form>
+        </div>
         </div>
     )
 }

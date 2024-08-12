@@ -2,6 +2,11 @@ import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 
+
+import LandingPage from "./Pages/LandingPage/LandingPage";
+import BrowserPage from "./Pages/BrowserPage/BrowserPage";
+
+
 import Home from "./Pages/Home/Home";
 import Products from "./Pages/Products/Products";
 import About from "./Pages/About/About";
@@ -13,13 +18,9 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Home />
-      <About />
-      <Products />
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
-        {/* <Route path="/Products" element={<Products />} /> */}
-        {/* <Route path="/About" element={<About />} /> */}
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/browse" element={<BrowserPage />} />
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/Shop" element={<Shop />} />
         <Route path="/EnquiryForm" element={<EnquiryForm />} />
