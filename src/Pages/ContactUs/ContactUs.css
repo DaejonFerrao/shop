@@ -1,3 +1,9 @@
+.contact-container {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
 .row-name {
     font-family: "Kavoon", serif;
     bottom: 20px;

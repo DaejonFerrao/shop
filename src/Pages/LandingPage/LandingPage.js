@@ -4,6 +4,7 @@ import About from '../About/About';
 import Products from '../Products/Products';
 import Shop from "../Shop/Shop";
 
+
 const LandingPage = () => {
   return (
     <div>

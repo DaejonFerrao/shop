@@ -1,13 +1,13 @@
 .footer {
     position: relative;
-    /* left: 300px; */
+    left: 300px;
     top: 100px;
     text-decoration: none;
     height: 70px;
     width: 100%;
-    background-color: #B18316;
+    background-color: white;
     color: white;
-    /* border-radius: 50px; */
+    border-radius: 50px;
 }
 
 .footer a {
@@ -17,8 +17,63 @@
     left: 790px;
     border-radius: 40px;
     gap: 40px;
-    color: white;
+    color: black;
     padding: 16px 16px;
     text-decoration: none;
     font-size: 17px;
 }
+
+.footer-Logo {
+    z-index: 1000;
+    position: relative;
+    right: 490px;
+    padding: 20px;
+    bottom: 50px;
+    width: 150px;
+    height: 90px;
+    border-radius: 50px;
+}
+
+.address {
+    font-family: "Kavoon", "serif";
+    position: relative;
+    font-size: 22px;
+    top: 10px;
+    left: 300px;
+    color: black;
+}
+
+.address-p {
+    position: relative;
+    /* font-family: "Kavoon", "serif"; */
+    font-size: 20px;
+    top: 0px;
+    left: 300px;
+    color: black;
+}
+
+.footer-contact {
+    font-family: "Kavoon", "serif";
+    position: relative;
+    top: 10px;
+    font-size: 22px;
+    left: 300px;
+    color: black;
+}
+
+.footer-contact-p {
+    position: relative;
+    bottom: 6px;
+    left: 300px;
+    color: black;
+    font-size: 20px;
+}
+
+.footer-nav {
+    position: relative;
+    bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+

@@ -5,6 +5,7 @@ import Veg1 from "../../Assets/Veg2.png"
 
 const EnquiryForm = () => {
     return (
+        <div className='enquiry-container'>
         <div>
             <p className='header'>Order Online</p>
         <div>
@@ -45,6 +46,7 @@ const EnquiryForm = () => {
                 </div>
                 <button className='enquiry-button'>Send A Request</button>
             </form>
+        </div>
         </div>
         </div>
     )

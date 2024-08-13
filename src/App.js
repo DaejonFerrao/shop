@@ -13,6 +13,7 @@ import About from "./Pages/About/About";
 import ContactUs from "./Pages/ContactUs/ContactUs";
 import Shop from "./Pages/Shop/Shop";
 import EnquiryForm from "./Pages/EnquiryForm/EnquiryForm";
+import Newsletter from "./Components/Newsletter/Newsletter";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/Shop" element={<Shop />} />
         <Route path="/EnquiryForm" element={<EnquiryForm />} />
       </Routes>
+      <Newsletter />
       <Footer />
     </div>
   );

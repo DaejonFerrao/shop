@@ -19,7 +19,7 @@
     font-family: "Kavoon", "serif";
     font-size: 20px;
     top: 180px;
-    color: #44680A;
+    color: black;
     font-size: 50px;
 
 }
@@ -61,6 +61,44 @@
     font-size: 20px;
 }
 
+.name-3 {
+    color: white;
+    position: relative;
+    bottom: 40px;
+    font-family: "Kavoon", "serif";
+    left: 20px;
+    font-size: 20px;
+}
+
+.name-5 {
+    color: white;
+    position: relative;
+    bottom: 30px;
+    font-family: "Kavoon", "serif";
+    left: 20px;
+    font-size: 20px;
+}
+
+.name-6 {
+    color: white;
+    position: relative;
+    bottom: 30px;
+    font-family: "Kavoon", "serif";
+    left: 20px;
+    font-size: 20px;
+}
+
+.article-container {
+    position: relative;
+    left: 70px;
+}
+
+.change {
+    position: relative;
+    bottom: 40px;
+    color: #BF9C41;
+}
+
 .picture-1 {
     width: 100%;
     border-radius: 15px;
@@ -80,6 +118,26 @@
     width: 290px;
     height: 250px;
     border-radius: 20px;
+}
+
+.picture-4 {
+    width: 350px;
+    border-radius: 20px;
+}
+
+.picture-5 {
+    position: relative;
+    top: 15px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.picture-6 {
+    position: relative;
+    top: 28px;
+    width: 300px;
+    border-radius: 20px;
+    height: 230px;
 }
 
 .article-2 {
@@ -159,6 +217,11 @@
     font-weight: bold;
     color: #44680A;
     margin-bottom: 20px;
+}
+
+.shop-nav {
+    position: relative;
+    right: 50px;
 }
 
 /* Responsive styling for tablets and small desktops */

@@ -1,0 +1,45 @@
+.heading {
+    position: relative;
+    text-align: center;
+    bottom: 30px;
+    font-family: "Kavoon", "serif";
+    font-size: 30px;
+}
+
+.news-description {
+    position: relative;
+    text-align: center;
+    bottom: 60px;
+    font-size: 40px;
+    font-family: "Kavoon", "serif";
+}
+
+.news-email {
+    position: relative;
+    bottom: 50px;
+    left: 600px;
+    height: 60px;
+    width: 500px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.news-email::placeholder {
+  position: relative;
+  left: 20px;
+  font-weight: bold;
+}
+
+.news-button {
+    position: relative;
+    left: 640px;
+    bottom: 50px;
+    background-color: #a67924;
+    color: white;
+    font-family: "Kavoon", serif;
+    font-size: 18px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
