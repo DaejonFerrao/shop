@@ -120,7 +120,8 @@ body {
         padding: 15px 30px;
     }
 
-    .fruit, .overlay {
+    .fruit,
+    .overlay {
         height: 500px;
         width: 100%;
     }
@@ -132,25 +133,40 @@ body {
 }
 
 /* Small screens (phones) */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .home {
+        position: relative;
+        top: 50px;
+        right: 200px;
         padding: 20px;
-        height: auto;
+        /* height: auto; */
+        width: 600px;
     }
 
     .title1 {
-        font-size: 32px;
+        position: relative;
+        bottom: 469px;
+        left: 140px;
+        font-size: 30px;
         margin-bottom: 10px;
+
     }
 
     .description1 {
+        position: relative;
+        bottom: 470px;
+        left: 140px;
         font-size: 24px;
         margin-bottom: 20px;
     }
 
     .button-container1 {
+        position: relative;
+        bottom: 170px;
+        right: 175px;
         flex-direction: column;
         gap: 10px;
+        width: 50%;
     }
 
     .button {
@@ -158,9 +174,19 @@ body {
         padding: 10px 20px;
     }
 
-    .fruit, .overlay {
-        height: 300px;
-        width: 100%;
+    .fruit {
+        position: relative;
+        width: 460px;
+        left: 120px;
+        top: 50px;
+        height: 700px;
+    }
+
+    .overlay {
+        top: 70px;
+        left: 210px;
+        height: 700px;
+        width: 72%;
     }
 
     .home-button {
