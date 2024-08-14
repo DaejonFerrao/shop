@@ -18,7 +18,7 @@ body {
 .title1 {
     position: relative;
     bottom: 600px;
-    left: 500px;
+    left: 450px;
     font-family: "Kavoon", "serif";
     font-size: 50px;
     font-weight: bold;
@@ -29,7 +29,7 @@ body {
 .description1 {
     position: relative;
     bottom: 600px;
-    left: 500px;
+    left: 450px;
     font-size: 32px;
     font-family: "Kavoon", "serif";
     color: white;
@@ -62,18 +62,18 @@ body {
 .fruit {
     bottom: 50px;
     position: relative;
-    left: 50px;
+    right: 40px;
     border-radius: 20px;
     height: 720px;
-    width: 1400px;
+    width: 1600px;
 }
 
 .overlay {
     position: absolute;
     top: 0;
-    left: 100px;
+    left: 10px;
     height: 720px;
-    width: 1400px;
+    width: 1600px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
 }
@@ -81,7 +81,7 @@ body {
 .home-button {
     position: relative;
     bottom: 100px;
-    left: 497px;
+    left: 450px;
     background-color: #a67924;
     color: white;
     font-family: "Kavoon", serif;
