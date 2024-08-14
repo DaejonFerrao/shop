@@ -8,9 +8,15 @@ import Shop from "../Shop/Shop";
 const LandingPage = () => {
   return (
     <div>
+      <section id="/">
         <Home />
+        </section>
+        <section id="/About">
         <About />
-        <Shop />
+        </section>
+        <section>
+        <Shop id="/Shop" />
+        </section>
     </div>
   )
 }

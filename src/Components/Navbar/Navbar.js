@@ -11,34 +11,17 @@ const Navbar = () => {
                     <img src={Logo} alt="Logo" className="Logo" />
                 </NavLink>
             </div>
+           
             <div className="topnav">
-                <NavLink
-                    to="/About Us"
-                    className="nav-list" /*href="Shop" */
-                    activeClassName="active"
-                >About us
-                </NavLink>
-                <NavLink
-                    to="/Shop"
-                    className="nav-list" /*href="Shop" */
-                    activeClassName="active"
-                >Produce
-                </NavLink>
-                <NavLink
-                    to="/ContactUs"
-                    className="nav-list" /*href="ContactUs" */
-                    activeClassName="active"
-                >Enquire
-                </NavLink>
-                <NavLink
-                    to="/EnquiryForm"
-                    className="nav-list"
-                    activeClassName="active" /*href="EnquiryForm"*/
-                >Order Online
-                </NavLink>
+                <ul>
+                <li><a href="#AboutUs" className="nav-list">About Us</a></li>
+                <li><a href="#Shop" className="nav-list">Services</a></li>
+                <li><a href="#ContactUs" className="nav-list">Enquire</a></li>
+                <li><a href="#EnquiryForm" className="nav-list">Order Now</a></li>
+                </ul>
             </div>
-            <div className="underline"></div>
-        </div>
+        </div> 
+    //  </div>
     );
 };
 

@@ -19,13 +19,25 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/browse" element={<BrowserPage />} />
-        <Route path="/ContactUs" element={<ContactUs />} />
-        <Route path="/Shop" element={<Shop />} />
-        <Route path="/EnquiryForm" element={<EnquiryForm />} />
-      </Routes>
+      {/* <Routes> */}
+      <section id='Home'>
+       <Home />
+        </section>
+        <section id="AboutUs">
+        <About />
+          </section> 
+        <section id="ContactUs">
+        <ContactUs />
+          </section> 
+        <section id="Shop">
+        <Shop />
+        </section>
+        <section id="EnquiryForm">
+        <EnquiryForm />
+        </section> 
+
+    
+      {/* </Routes> */}
       <Newsletter />
       <Footer />
     </div>

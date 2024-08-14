@@ -21,7 +21,7 @@ const Home = () => {
             FRESH LOCAL NATURAL
             </p>
             <div className="button-container1">
-                <button className="home-button" onClick={() => navigateTo("/Shop")}>Produce</button> 
+                <button className="home-button" onClick={() => navigateTo("Shop")}>Produce</button> 
             </div>
         </div>
     );
