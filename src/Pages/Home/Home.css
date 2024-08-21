@@ -1,24 +1,37 @@
-body {
-    background-color: #bcbcbc;
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
 }
 
+
 .home {
-    position: relative;
-    top: 50px;
-    right: 430px;
     background-color: white;
     padding: 50px;
     text-align: center;
     border-radius: 20px;
-    max-width: 600px;
     margin: 50px auto;
-    height: 800px;
+    height: auto;
+    padding-top: 250px;
+}
+
+.home-inner {
+    background-image: url("C:\Users\daejo\OneDrive\Desktop\test\shop\src\Assets\FRUIT.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+    border-radius: 50px;
 }
 
 .title1 {
-    position: relative;
-    bottom: 600px;
-    left: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: "Kavoon", "serif";
     font-size: 50px;
     font-weight: bold;
@@ -26,13 +39,16 @@ body {
     margin-bottom: 20px;
 }
 
+.title1 p {
+    color: white;
+}
+
+
+
 .description1 {
-    position: relative;
-    bottom: 600px;
-    left: 450px;
     font-size: 32px;
     font-family: "Kavoon", "serif";
-    color: white;
+    color: black;
     margin-bottom: 30px;
 }
 
@@ -60,6 +76,7 @@ body {
 }
 
 .fruit {
+    filter: grayscale(80%);
     bottom: 50px;
     position: relative;
     right: 40px;
@@ -68,20 +85,8 @@ body {
     width: 1600px;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    height: 720px;
-    width: 1600px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-}
 
 .home-button {
-    position: relative;
-    bottom: 100px;
-    left: 450px;
     background-color: #a67924;
     color: white;
     font-family: "Kavoon", serif;
@@ -90,6 +95,7 @@ body {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 
@@ -101,6 +107,8 @@ body {
     }
 
     .title1 {
+        position: relative;
+        left: 10px;
         font-size: 40px;
         margin-bottom: 15px;
     }
@@ -111,6 +119,8 @@ body {
     }
 
     .button-container1 {
+        position: relative;
+        bottom: 1250px;
         flex-direction: column;
         gap: 15px;
     }
@@ -135,27 +145,21 @@ body {
 /* Small screens (phones) */
 @media (max-width: 600px) {
     .home {
-        position: relative;
-        top: 50px;
-        right: 200px;
-        padding: 20px;
-        /* height: auto; */
-        width: 600px;
+        text-align: center;
+        border-radius: 20px;
+        margin: 50px auto;
+        padding-left: 20px;
+        height: auto;
+        width: 400px;
     }
 
     .title1 {
-        position: relative;
-        bottom: 469px;
-        left: 140px;
         font-size: 30px;
         margin-bottom: 10px;
 
     }
 
     .description1 {
-        position: relative;
-        bottom: 470px;
-        left: 140px;
         font-size: 24px;
         margin-bottom: 20px;
     }

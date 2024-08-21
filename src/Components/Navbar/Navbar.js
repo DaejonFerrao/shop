@@ -4,24 +4,34 @@ import { NavLink } from "react-router-dom";
 import Logo from "../../Assets/C4.png";
 
 const Navbar = () => {
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
     return (
         <div className="navbar-container">
-            <div className="logo-container">
-                <NavLink to="/" className="logo-link">  {/* This link navigates to the home page */}
+            {/* <div className="logo-container"> */}
+                <li> <a href="#Home" className="logo-link">
                     <img src={Logo} alt="Logo" className="Logo" />
-                </NavLink>
-            </div>
-           
+                </a>
+                </li>
+            {/* </div> */}
             <div className="topnav">
                 <ul>
-                <li><a href="#AboutUs" className="nav-list">About Us</a></li>
-                <li><a href="#Shop" className="nav-list">Services</a></li>
-                <li><a href="#ContactUs" className="nav-list">Enquire</a></li>
-                <li><a href="#EnquiryForm" className="nav-list">Order Now</a></li>
+                    <li><a href="#AboutUs">About Us</a></li>
+                    <li><a href="#Shop">Services</a></li>
+                    <li><a href="#ContactUs">Enquire</a></li>
+                    <li><a href="#EnquiryForm">Order Now</a></li>
                 </ul>
             </div>
-        </div> 
-    //  </div>
+        </div>
     );
 };
 

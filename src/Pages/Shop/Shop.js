@@ -14,6 +14,9 @@ import Cashew from "../../Assets/cashew.png";
 import Mangoes from "../../Assets/mangoes.jpg";
 import Chillies from "../../Assets/chillies.png";
 import Yam from "../../Assets/yam.jpg";
+import Birdseye from "../../Assets/birdseye.png";
+import PassionFruit from "../../Assets/PassionFruit.jpg"
+import Yams from "../../Assets/Yams.png";
 
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
@@ -23,46 +26,28 @@ const Shop = () => {
     const navigateTo = useNavigate();
 
     return (
-     <div>
-        <div className="final">
-            {/* <div className='test'>Produce</div> */}
-            <div className="information">
-               Take a look at our<br></br> <p className='change'>Produce</p>
+        <div>
+            <div className='shop-container'>
+                <div className='shop-header'>
+                    <p>Take a look at our <br></br>Produce</p>
+                </div>
+                <div className='picture-container'>
+                    <img src={Yam} alt="Yam"></img>
+                    <p>Yam</p>
+                    <img src={Coconuts} alt="Coconuts"></img>
+                    <p>Coconuts</p>
+                    <img src={PassionFruit} alt="PassionFruit"></img>
+                    <p>Passion Fruit</p>
+                    <img src={Cashew} alt="Cashew"></img>
+                    <p>Cashew Nuts</p>
+                    <img src={Mangoes} alt="Mangoes"></img>
+                    <p>Mangoes</p>
+                </div>
+                <div className="shop-button-container">
+                    <li><a href="#EnquiryForm" className='shop-button' >Order Now</a></li>
+                </div>
             </div>
-            <div className='article-container'>
-            <div className="article">
-                <img src={Cashew} alt="Veg1" className="picture-1" />
-                <header className="name">Cashew Nuts</header>
-            </div>
-            <div className="article-2">
-            <img src={Coconuts} alt="Veg1" className="picture-2" />
-                <header className='name-1'>Coconuts</header>
-            </div>
-            <div className="article-3">
-            <img src={Passion} alt="Veg1" className="picture-3" />
-                <header className='name-2'>Passion Fruit</header>
-            </div>
-            <div className="article-4">
-            <img src={Yam} alt="Veg1" className="picture-6" />
-                <header className="name-6">Passion Fruit</header>
-            </div>
-            <div className="article-5">
-                <img src={Chillies} alt="Veg5" className="picture-5" />
-                <header className='name-5'>Birdseye Chillies</header>
-            </div>
-            <div className="article-6">
-                <img src={Mangoes} alt="Veg6" className="picture-4" />
-                <header className='name-3'>Mangoes</header>
-            </div>
-           <div>
-           </div>
-           <div className='shop-nav'>
-            <div className='title-3'>Want to make an enquiry?</div>
-            <p><a className="button-1" onClick={() => navigateTo("/EnquiryForm")}>Enquire Now</a> </p>
-            </div>
-           </div>
         </div>
-    </div>
     )
 }
 

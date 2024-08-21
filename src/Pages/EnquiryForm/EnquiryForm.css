@@ -1,137 +1,149 @@
-.enquiry-container {
-    padding-top: 100px;
-    padding-bottom: 300px;
-}
+@media screen and (max-width: 1920px) {
 
-.enquiry-title {
-    color: #C6A95E;
-    font-family: "Kavoon", serif;
-    position: relative;
-    left: 200px;
-    top: 50px;
-    font-size: 25px;
-}
+    html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
 
-.enquiry-desc {
-    font-family: "Kavoon", serif;
-    position: relative;
-    left: 200px;
-    top: 60px;
-    font-size: 19px;
-}
+    .enquiry-container {
+        /* display: none; */
+        padding-top: 0px;
+        padding-bottom: 400px;
+    }
 
-.Enquiry {
-    height: 400px;
-    left: 90px;
-    position: relative;
-    top: 130px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 60px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
-}
+    .enquiry-title {
+        color: #C6A95E;
+        font-family: "Kavoon", serif;
+        position: relative;
+        left: 200px;
+        top: 50px;
+        font-size: 25px;
+    }
 
-.Enquiry input,
-.Enquiry textarea {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    outline: none;
-    font-size: 16px;
-}
+    .enquiry-desc {
+        font-family: "Kavoon", serif;
+        position: relative;
+        left: 200px;
+        top: 60px;
+        font-size: 19px;
+    }
 
-.Enquiry input::placeholder,
-.Enquiry textarea::placeholder {
-    color: #aaa;
-}
+    .Enquiry {
+        height: 400px;
+        left: 90px;
+        position: relative;
+        top: 130px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 60px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 80%;
+    }
 
+    .Enquiry input,
+    .Enquiry textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        outline: none;
+        font-size: 16px;
+    }
 
-.Enquiry .half-width {
-    width: calc(50% - 10px);
-}
-
-.Equiry .half-width:first-child {
-    margin-right: 20px;
-}
-
-.Equiry .row {
-    display: flex;
-    padding: 40px;
-}
-
-.row-fname {
-    bottom: 20px;
-    display: flex;
-    position: relative;
-    left: 100px;
-    width: 15%;
-}
-
-.row-lname {
-    font-family: "Kavoon", serif;
-    position: relative;
-    bottom: 65px;
-    left: 380px;
-    display: flex;
-    width: 15%;
-}
-
-.row-email {
-    position: relative;
-    bottom: 30px;
-    left: 100px;
-    width: 15%;
-}
-
-.row-quantity {
-    position: relative;
-    width: 15%;
-    left: 380px;
-}
-
-.row-product {
-    position: relative;
-    bottom: 40px;
-    width: 15%;
-    left: 100px;
-}
-
-.row-message {
-    position: relative;
-    padding-bottom: 10px;
-    bottom: 30px;
-    width: 33%;
-    left: 50px;
-    margin: 20px 0;
-    height: 200px;
-}
+    .Enquiry input::placeholder,
+    .Enquiry textarea::placeholder {
+        color: #aaa;
+    }
 
 
-.enquiry-button {
-    background-color: #a67924;
-    color: white;
-    font-family: "Kavoon", serif;
-    position: relative;
-    left: 100px;
-    bottom: 10px;
-    font-size: 18px;
-    padding: 20px 40px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-}
+    .Enquiry .half-width {
+        width: calc(50% - 10px);
+    }
 
-.header {
-    top: 50px;
-    position: relative;
-    left: 950px;
-    font-size: 30px;
-    font-family: "Kavoon", serif;
-    color: #a67924;
+    .Equiry .half-width:first-child {
+        margin-right: 20px;
+    }
+
+    .Equiry .row {
+        display: flex;
+        padding: 40px;
+    }
+
+    .row-fname {
+        bottom: 20px;
+        display: flex;
+        position: relative;
+        left: 100px;
+        width: 15%;
+    }
+
+    .row-lname {
+        font-family: "Kavoon", serif;
+        position: relative;
+        bottom: 65px;
+        left: 380px;
+        display: flex;
+        width: 15%;
+    }
+
+    .row-email {
+        position: relative;
+        bottom: 30px;
+        left: 100px;
+        width: 15%;
+    }
+
+    .row-quantity {
+        position: relative;
+        width: 15%;
+        left: 380px;
+        top: 10px;
+    }
+
+    .row-product {
+        position: relative;
+        bottom: 40px;
+        width: 15%;
+        left: 100px;
+    }
+
+    .row-message {
+        position: relative;
+        padding-bottom: 10px;
+        bottom: 30px;
+        width: 33%;
+        left: 50px;
+        margin: 20px 0;
+        height: 200px;
+    }
+
+
+    .enquiry-button {
+        background-color: #a67924;
+        color: white;
+        font-family: "Kavoon", serif;
+        position: relative;
+        left: 100px;
+        bottom: 10px;
+        font-size: 18px;
+        padding: 20px 40px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    .header {
+        top: 50px;
+        position: relative;
+        left: 850px;
+        font-size: 30px;
+        font-family: "Kavoon", serif;
+        color: #a67924;
+    }
 }
 
 /* Responsive styling for tablets and small desktops */
@@ -179,12 +191,16 @@
 }
 
 /* Responsive styling for mobile devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+
+    .enquiry-container {
+        padding-top: -50px;
+    }
 
     .enquiry-title,
     .enquiry-desc {
         left: 0;
-        top: 10px;
+        top: 90px;
         text-align: center;
         font-size: 20px;
     }
@@ -196,28 +212,49 @@
         box-shadow: none;
     }
 
-    .row-fname,
-    .row-lname,
-    .row-email,
-    .row-quantity,
+    .row-fname {
+        position: relative;
+    }
+
+    .row-lname {
+        position: relative;
+        left: 230px;
+        bottom: 78px;
+    }
+
+    .row-email {
+        width: 45%;
+    }
+
+    .row-quantity {
+        position: relative;
+        /* left: 100px; */
+    }
+
     .row-product {
-        width: 100%;
-        left: 0;
+        width: 40%;
+        left: 250px;
+        bottom: 48px;
         margin: 10px 0;
     }
 
     .row-message {
-        width: 100%;
+        width: 90%;
         left: 0;
         margin: 20px 0;
         height: 120px;
     }
 
+    .header {
+        position: relative;
+        left: 150px;
+    }
+
     .enquiry-button {
         position: relative;
-        left: 0;
+        left: 220px;
         margin-top: 15px;
-        width: 100%;
+        width: 80%;
         padding: 15px;
         font-size: 16px;
         text-align: center;

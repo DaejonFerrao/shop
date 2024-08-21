@@ -1,3 +1,8 @@
+.news-container {
+    display: none;
+    height: auto;
+}
+
 .heading {
     position: relative;
     text-align: center;
@@ -42,4 +47,81 @@
     border: none;
     border-radius: 50px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Heading Styling */
+
+    .news-container {
+        padding-top: 50px;
+    }
+
+    .heading {
+        position: relative;
+        text-align: center;
+        bottom: 20px; /* Adjusted spacing */
+        font-family: "Kavoon", "serif";
+        font-size: 26px; /* Reduced font size for smaller screens */
+        margin-bottom: 20px; /* Added margin for separation */
+        color: #333; /* Darker color for readability */
+    }
+
+    /* News Description Styling */
+    .news-description {
+        position: relative;
+        text-align: center;
+        bottom: 30px; /* Adjusted spacing */
+        font-size: 24px; /* Reduced font size for better fit */
+        font-family: "Kavoon", "serif";
+        margin-bottom: 20px; /* Added margin for better layout */
+        color: #555; /* Softer color for a more subtle look */
+    }
+
+    /* Email Input Styling */
+    .news-email {
+        position: relative;
+        bottom: 30px; /* Adjusted spacing */
+        left: 20px; /* Centered the input field */
+        width: 90%; /* Adjusted width for better fit */
+        max-width: 100%; /* Ensure it doesn't exceed the screen width */
+        margin: 0 auto; /* Center the input field horizontally */
+        height: 50px; /* Adjusted height for better proportion */
+        border-radius: 25px; /* Rounded corners for a modern look */
+        font-size: 18px; /* Slightly reduced font size */
+        padding-left: 20px; /* Padding inside the input */
+        border: 1px solid #ccc; /* Added a light border */
+        box-sizing: border-box; /* Ensure padding is included in width */
+    }
+
+    .news-email::placeholder {
+        font-weight: bold;
+        color: #999; /* Lighter color for the placeholder text */
+    }
+
+    /* Button Styling */    
+    .news-button {
+        position: relative;
+        left: 0; /* Centered the button */
+        bottom: 30px; /* Adjusted spacing */
+        display: block; /* Ensures block-level for easy centering */
+        width: 70%; /* Full width with some padding */
+        max-width: 100%; /* Ensures it doesn't exceed the screen width */
+        margin: 10px auto; /* Centered and with space around */
+        background-color: #a67924; /* Button color */
+        color: white;
+        font-family: "Kavoon", serif;
+        font-size: 18px;
+        padding: 15px 0; /* Adjusted padding for better touch support */
+        border: none;
+        border-radius: 25px; /* Rounded corners for consistency */
+        cursor: pointer;
+        text-align: center; /* Ensure the text is centered within the button */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+        transition: background-color 0.3s ease; /* Smooth transition effect */
+    }
+
+    .news-button:hover {
+        background-color: #855f1b; /* Darker shade on hover */
+    }
 }

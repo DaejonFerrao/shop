@@ -1,7 +1,14 @@
+/* html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+} */
+
 .contact-container {
-    position: relative;
-    padding-top:400px;
-    padding-bottom: 300px;
+    /* display: none; */
+    padding-top:200px;
+    padding-bottom: 100px;
 }
 
 .row-name {
@@ -27,6 +34,15 @@
     width: 500px;
     left: 50px;
     height: 150px;
+}
+
+.contact-header {
+    top: 50px;
+    position: relative;
+    left: 930px;
+    font-size: 30px;
+    font-family: "Kavoon", serif;
+    color: #a67924;
 }
 
 .contact {
@@ -87,39 +103,74 @@
 }
 
 /* Responsive styling for mobile devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
 
-    .row-name,
-    .row-laname {
-        left: 0;
-        width: 90%;
+    .contact-container {
+        padding-top: 0px;
+    }
+
+    /* Center-align the name and last name rows */
+    .row-name {
+        position: relative;
+        left: -10px;
+        width: 90%; /* Width adjusted for smaller screen */
         margin: 0 auto;
-        bottom: 10px;
+        bottom: -38px;
+        padding: 10px 0; /* Adding some padding for better spacing */
     }
 
+    /* Ensuring the last name row follows the same style */
     .row-laname {
-        bottom: 10px;
+        position: relative;
+        left: 250px;
+        bottom: 20px; /* Maintain consistent spacing from the bottom */
     }
 
+    /* Contact message row to take full width and maintain height */
     .row-contactmessage {
-        width: 100%;
+        position: relative;
+        width: 100%; /* Full width for better visibility */
         left: 0;
         margin: 0 auto;
-        height: 200px;
+        height: 180px; /* Slightly reduced height for a more compact look */
+        padding: 10px; /* Add padding for better content spacing */
     }
 
+    /* Contact section styling */
     .contact {
-        font-size: 28px;
+        font-size: 26px; /* Slightly reduced font size for smaller screens */
         left: 0;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 15px; /* Reduced margin for a more compact layout */
+        line-height: 1.2; /* Adjusted line-height for better readability */
     }
 
+    .contact-header {
+        position: relative;
+        left: 180px;
+    }
+
+    /* Contact button styling */
     .contact-button {
-        left: 0;
-        width: 80%;
-        margin: 20px auto;
-        padding: 15px 30px;
+        position: relative;
+        left: 17px;
+        width: 85%; /* Increased width for better CTA visibility */
+        margin: 20px auto; /* Center aligned with margin */
+        padding: 12px 25px; /* Adjusted padding for a better button feel */
+        font-size: 18px; /* Font size increased for better accessibility */
         text-align: center;
+        background-color: #a67924; /* Add a background color for CTA visibility */
+        color: white; /* White text for better contrast */
+        border-radius: 50px; /* Rounded corners for a modern look */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    }
+
+    /* Ensure elements don't overlap */
+    .row-name,
+    .row-laname,
+    .row-contactmessage,
+    .contact,
+    .contact-button {
+        box-sizing: border-box; /* Make sure padding and width work as intended */
     }
 }
