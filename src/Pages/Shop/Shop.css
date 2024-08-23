@@ -1,8 +1,7 @@
-html, body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+.shop-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .shop-header {
@@ -14,30 +13,44 @@ html, body {
 
 .picture-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    grid-gap: 25px;
-    padding: 10px 0px 100px 150px;
+    flex-direction: column;
+    padding: 50px 100px;
 }
 
-.picture-container img {
-    height: 220px;
-    padding: 50px 50px 0px;
-    width: 20%;
-    border-radius: 50px;
-} 
-
-.picture-container p {
+.picture-container-content {
     position: relative;
-    top: 180px;
-    right: 380px;
-    font-size: 30px;
-    font-family: "Kavoon", "serif";
+}
+
+.picture-container-content p {
+    position: absolute;
     color: white;
+    font-family: "Kavoon", serif;
+    font-size: 24px;
+    left: 20%;
+    bottom: 15%;
+}
+
+
+.picture-container-inner img{
+    height: 220px;
+    padding: 50px 50px;
+    width: 70%;
+    border-radius: 70px;
+}
+
+.picture-container-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .shop-button-container {
-    padding-left: 850px;
+    padding-left: 650px;
+}
+
+.shop-button-container li {
+    list-style-type: none;
+    padding-right: 700px;
 }
 
 .shop-button {
@@ -60,6 +73,12 @@ html, body {
 /* Responsive styling for mobile devices */
 @media screen and (max-width: 600px) {
 
+    .shop-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
     .shop-header {
         text-align: center;
         padding-top: 150px;
@@ -69,25 +88,34 @@ html, body {
     
     .picture-container {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        grid-gap: 25px;
+        flex-direction: column;
         padding: 50px 100px;
     }
     
-    .picture-container img {
-        height: 220px;
-        padding: 50px 50px 0px;
-        width: 100%;
-        border-radius: 50px;
-    } 
+    .picture-container-content {
+        position: relative;
+        /* border-radius: 20px; */
+    }
     
-    .picture-container p {
-        display: flex;
-        padding: 20px;
-        font-size: 30px;
-        font-family: "Kavoon", "serif";
-        color: black;
+    .picture-container-content p {
+        position: absolute;
+        color: white;
+        font-family: "Kavoon", serif;
+        font-size: 24px;
+        left: 20%;
+        bottom: 15%;
+    }
+    
+    
+    .picture-container-inner img{
+        height: 220px;
+        padding: 50px 50px;
+        width: 80%;
+        border-radius: 70px;
+    }
+    
+    .picture-container-inner {
+        flex-direction: column;
     }
     
     .shop-button-container {
@@ -105,4 +133,5 @@ html, body {
         cursor: pointer;
         text-decoration: none;
     }
+   
 }

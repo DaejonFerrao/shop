@@ -32,16 +32,34 @@ const Shop = () => {
                     <p>Take a look at our <br></br>Produce</p>
                 </div>
                 <div className='picture-container'>
-                    <img src={Yam} alt="Yam"></img>
-                    <p>Yam</p>
-                    <img src={Coconuts} alt="Coconuts"></img>
-                    <p>Coconuts</p>
-                    <img src={PassionFruit} alt="PassionFruit"></img>
-                    <p>Passion Fruit</p>
-                    <img src={Cashew} alt="Cashew"></img>
-                    <p>Cashew Nuts</p>
-                    <img src={Mangoes} alt="Mangoes"></img>
-                    <p>Mangoes</p>
+                    <div className='picture-container-inner'>
+                        <div className='picture-container-content'>
+                            <img src={Yam} alt="Yam"></img>
+                            <p>Yam</p>
+                        </div>
+                        <div className='picture-container-content'>
+                            <img src={Coconuts} alt="Coconuts"></img>
+                            <p>Coconuts</p>
+                        </div>
+                        <div className='picture-container-content'>
+                            <img src={Cashew} alt="Yam"></img>
+                            <p>Cashew</p>
+                        </div>
+                    </div>
+                    <div className='picture-container-inner'>
+                        <div className='picture-container-content'>
+                            <img src={Birdseye} alt="Yam"></img>
+                            <p>Birdseye</p>
+                        </div>
+                        <div className='picture-container-content'>
+                            <img src={Mangoes} alt="Yam"></img>
+                            <p>Mangoes</p>
+                        </div>
+                        <div className='picture-container-content'>
+                            <img src={PassionFruit} alt="Yam"></img>
+                            <p>Passion Fruit</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="shop-button-container">
                     <li><a href="#EnquiryForm" className='shop-button' >Order Now</a></li>

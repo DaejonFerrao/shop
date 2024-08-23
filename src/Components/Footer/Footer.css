@@ -45,7 +45,16 @@
     font-family: "Kavoon", "serif";
     padding-top: 80px;
     font-size: 20px;
-    gap: 30px;
+    gap: 20px;
+}
+
+.footer-navigation ul {
+    list-style-type: none;
+}
+
+.footer-navigation a {
+    text-decoration: none;
+    color: black;
 }
 
 @media screen and (max-width: 600px) {
