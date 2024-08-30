@@ -18,15 +18,15 @@ const About = () => {
                 <div className="about-left">
                     <div className="tick">
                         <img src={tick}></img>
-                        <p> Only the finest produce, handpicked for your table</p>
+                        <p> Only the finest produce,<br></br> handpicked for your table</p>
                     </div>
                     <div className="tick">
                         <img src={boxes}></img>
-                        <p>Fresh fruits and veggies, packed with flavour. </p>
+                        <p>Fresh fruits and veggies,<br></br> packed with flavour. </p>
                     </div>
                     <div className="tick">
                         <img src={bucket}></img>
-                        <p>Top-grade produce, reliably delivered.</p>
+                        <p>Top-grade produce,<br></br> reliably delivered.</p>
                     </div>
                 </div>
                 <div className="about-right">

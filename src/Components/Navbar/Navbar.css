@@ -138,14 +138,14 @@
         transition: 0.3s;
     } */
 
-    /* .Logo {
+    .Logo {
         position: fixed;
-        bottom: 795px;
-    } */
+        bottom: 820px;
+    }
 
     .topnav {
         position: fixed;
-        top: 50px;
+        top: 90px;
         left: 0%;
         width: auto;
         height: auto;
@@ -184,6 +184,8 @@
     }
 
     .bar {
+        position: relative;
+        top: 170px;
         background-color: black;
     }
 }

@@ -26,46 +26,44 @@ const Shop = () => {
     const navigateTo = useNavigate();
 
     return (
-        <div>
-            <div className='shop-container'>
-                <div className='shop-header'>
-                    <p>Take a look at our <br></br>Produce</p>
+        <div class='shop-container'>
+        <div class='shop-header'>
+            <p>Take a look at our <br />Produce</p>
+        </div>
+        <div class='picture-container'>
+            <div class='picture-container-inner'>
+                <div class='picture-container-content'>
+                <img src={Yam} alt="Yam"></img>
+                    <p>Yam</p>
                 </div>
-                <div className='picture-container'>
-                    <div className='picture-container-inner'>
-                        <div className='picture-container-content'>
-                            <img src={Yam} alt="Yam"></img>
-                            <p>Yam</p>
-                        </div>
-                        <div className='picture-container-content'>
-                            <img src={Coconuts} alt="Coconuts"></img>
-                            <p>Coconuts</p>
-                        </div>
-                        <div className='picture-container-content'>
-                            <img src={Cashew} alt="Cashew"></img>
-                            <p>Cashew</p>
-                        </div>
-                    </div>
-                    <div className='picture-container-inner'>
-                        <div className='picture-container-content'>
-                            <img src={Birdseye} alt="Birdseye"></img>
-                            <p>Birdseye</p>
-                        </div>
-                        <div className='picture-container-content'>
-                            <img src={Mangoes} alt="Mangoes"></img>
-                            <p>Mangoes</p>
-                        </div>
-                        <div className='picture-container-content'>
-                            <img src={PassionFruit} alt="PassionFruit"></img>
-                            <p>Passion Fruit</p>
-                        </div>
-                    </div>
+                <div class='picture-container-content'>
+                <img src={PassionFruit} alt="PassionFruit"></img>
+                    <p>PassionFruit</p>
                 </div>
-                <div className="shop-button-container">
-                    <li><a href="#EnquiryForm" className='shop-button' >Order</a></li>
+            </div>
+            <div class='picture-container-inner'>
+                <div class='picture-container-content'>
+                <img src={Coconuts} alt="Coconuts"></img>
+                    <p>Coconuts</p>
+                </div>
+                <div class='picture-container-content'>
+                <img src={Cashew} alt="Cashew"></img>
+                    <p>Cashew</p>
+                </div>
+            </div>
+            <div class='picture-container-inner'>
+                <div class='picture-container-content'>
+                <img src={Birdseye} alt="Birdseye"></img>
+                    <p>Birdseye</p>
+                </div>
+                <div class='picture-container-content'>
+                <img src={Mangoes} alt="Manoges"></img>
+                    <p>Mangoes</p>
                 </div>
             </div>
         </div>
+        <a href="#EnquiryForm" class='shop-button'>Order</a>
+    </div>
     )
 }
 
