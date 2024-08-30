@@ -109,68 +109,68 @@
         padding-top: 0px;
     }
 
-    /* Center-align the name and last name rows */
+   
     .row-name {
         position: relative;
         left: -10px;
-        width: 90%; /* Width adjusted for smaller screen */
+        width: 90%; 
         margin: 0 auto;
         bottom: -38px;
-        padding: 10px 0; /* Adding some padding for better spacing */
+        padding: 10px 0; 
     }
 
-    /* Ensuring the last name row follows the same style */
+  
     .row-laname {
         position: relative;
         left: 250px;
-        bottom: 20px; /* Maintain consistent spacing from the bottom */
+        bottom: 20px; 
     }
 
-    /* Contact message row to take full width and maintain height */
+  
     .row-contactmessage {
         position: relative;
-        width: 100%; /* Full width for better visibility */
+        width: 100%; 
         left: 0;
         margin: 0 auto;
-        height: 180px; /* Slightly reduced height for a more compact look */
-        padding: 10px; /* Add padding for better content spacing */
+        height: 180px; 
+        padding: 10px; 
     }
 
-    /* Contact section styling */
+    
     .contact {
-        font-size: 26px; /* Slightly reduced font size for smaller screens */
+        font-size: 26px; 
         left: 0;
         text-align: center;
-        margin-bottom: 15px; /* Reduced margin for a more compact layout */
-        line-height: 1.2; /* Adjusted line-height for better readability */
+        margin-bottom: 15px; 
+        line-height: 1.2; 
     }
 
     .contact-header {
         position: relative;
-        left: 180px;
+        left: 130px;
     }
 
-    /* Contact button styling */
+    
     .contact-button {
         position: relative;
         left: 17px;
-        width: 85%; /* Increased width for better CTA visibility */
-        margin: 20px auto; /* Center aligned with margin */
-        padding: 12px 25px; /* Adjusted padding for a better button feel */
-        font-size: 18px; /* Font size increased for better accessibility */
+        width: 85%; 
+        margin: 20px auto; 
+        padding: 12px 25px; 
+        font-size: 18px; 
         text-align: center;
-        background-color: #a67924; /* Add a background color for CTA visibility */
-        color: white; /* White text for better contrast */
-        border-radius: 50px; /* Rounded corners for a modern look */
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+        background-color: #a67924; 
+        color: white; 
+        border-radius: 50px; 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
     }
 
-    /* Ensure elements don't overlap */
+    
     .row-name,
     .row-laname,
     .row-contactmessage,
     .contact,
     .contact-button {
-        box-sizing: border-box; /* Make sure padding and width work as intended */
+        box-sizing: border-box; 
     }
 }

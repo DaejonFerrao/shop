@@ -42,27 +42,27 @@ const Shop = () => {
                             <p>Coconuts</p>
                         </div>
                         <div className='picture-container-content'>
-                            <img src={Cashew} alt="Yam"></img>
+                            <img src={Cashew} alt="Cashew"></img>
                             <p>Cashew</p>
                         </div>
                     </div>
                     <div className='picture-container-inner'>
                         <div className='picture-container-content'>
-                            <img src={Birdseye} alt="Yam"></img>
+                            <img src={Birdseye} alt="Birdseye"></img>
                             <p>Birdseye</p>
                         </div>
                         <div className='picture-container-content'>
-                            <img src={Mangoes} alt="Yam"></img>
+                            <img src={Mangoes} alt="Mangoes"></img>
                             <p>Mangoes</p>
                         </div>
                         <div className='picture-container-content'>
-                            <img src={PassionFruit} alt="Yam"></img>
+                            <img src={PassionFruit} alt="PassionFruit"></img>
                             <p>Passion Fruit</p>
                         </div>
                     </div>
                 </div>
                 <div className="shop-button-container">
-                    <li><a href="#EnquiryForm" className='shop-button' >Order Now</a></li>
+                    <li><a href="#EnquiryForm" className='shop-button' >Order</a></li>
                 </div>
             </div>
         </div>

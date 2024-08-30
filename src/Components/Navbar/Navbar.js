@@ -1,55 +1,42 @@
 import "./Navbar.css";
+import { useEffect, useState } from "react";
 
 import { NavLink } from "react-router-dom";
-import Logo from "../../Assets/C4.png";
+import Logo from "../../Assets/C1.png";
 
 const Navbar = () => {
 
-    // const hamMenu =  document.querySelector(".ham-menu");
 
-    // const offScreenMenu = document.querySelector(".off-screen-menu");
+    const [isActive, setIsActive] = useState(false);
 
-    // hamMenu.addEventListener("click", () => {
-    //     hamMenu.classList.toggle("active");
-    //     offScreenMenu.classList.toggle("active");
-    // })
+    const toggleMenu = () => {
+        setIsActive(!isActive);
+    };
 
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
+    const closeMenu = () => {
+        setIsActive(false);
+    }
 
     return (
         <div className="navbar-container">
-            {/* <div className="logo-container"> */}
-                <li> <a href="#Home" className="logo-link">
+            <li className="logo-container">
+                <a href="#Home" className="logo-link">
                     <img src={Logo} alt="Logo" className="Logo" />
                 </a>
-                </li>
-            {/* </div> */}
-            <div className="topnav">
+            </li>
+            <div className={`topnav ${isActive ? "active" : ""}`}>
                 <ul>
-                    <li><a href="#AboutUs">About Us</a></li>
-                    <li><a href="#Shop">Services</a></li>
-                    <li><a href="#ContactUs">Enquire</a></li>
-                    <li><a href="#EnquiryForm">Order Now</a></li>
+                    <li><a href="#AboutUs" className="nav-link" onClick={closeMenu}>About Us</a></li>
+                    <li><a href="#Shop" className="nav-link" onClick={closeMenu}>Services</a></li>
+                    <li><a href="#ContactUs" className="nav-link" onClick={closeMenu}>Enquire</a></li>
+                    <li><a href="#EnquiryForm" className="nav-link" onClick={closeMenu}>Order Now</a></li>
                 </ul>
             </div>
-
-            <nav>
-                <div className="ham-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-
+            <div className={`hamburger ${isActive ? "active" : ""}`} onClick={toggleMenu}>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </div>
         </div>
     );
 };

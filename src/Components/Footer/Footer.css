@@ -73,8 +73,17 @@
         display: flex;
         flex-direction: column;
         padding: 50px 20px 100px 10px;
-        /* padding-right: 200px; */
     } 
+
+    .footer-contact h5 {
+        position: relative;
+        right: 200px;   
+    }
+
+    .footer-contact p {
+        position: relative;
+        right: 220px;
+    }
 
     .footer-logo img {
         width: 350px;
@@ -103,6 +112,15 @@
         padding-left: 20px;
         color: black;
         font-size: 20px;
+    }
+
+    .footer-navigation {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 150px;
+        right: 30px;
+
     }
 
 }

@@ -1,10 +1,9 @@
 .navbar-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 80%;
     padding-top: 24px;
-    padding-left: 250px;
     gap: 50px;
     position: fixed;
     z-index: 1000;
@@ -21,14 +20,41 @@
     justify-content: center;
     gap: 100px;
     border-radius: 50px;
+    transition: transform 0.3s ease;
 }
 
+.Logo {
+    position: relative;
+    left: 100px;
+    height: 150px;
+}
+
+.logo-container {
+    list-style: none;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: "Kavoon", "serif";
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.topnav ul li {
+    list-style-type: none;
+    padding: 0;
+}
 
 .topnav a {
-    /* position: relative; */
     font-weight: 20px;
-    top: 30px;
-    left: 30px;
     border-radius: 40px;
     gap: 20px;
     color: #f2f2f2;
@@ -37,69 +63,36 @@
     font-size: 17px;
 }
 
-
 .topnav a:hover {
     background-color: #ddd;
     color: black;
+    border-radius: 40px;
 }
 
-.topnav .icon {
+.hamburger {
     display: none;
-}
-
-.Logo {
-    height: 100px;
-    width: 100%;
-    border-radius: 50px;
-}
-
-.nav-list {
-    font-size: 24px;
-    left: 220px;
-    color: white;
-    font-family: "Kavoon", serif;
     cursor: pointer;
 }
 
-.mobile-menu {
-    display: none;
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
 }
 
-.topnav ul {
-    list-style-type: none;
-    margin: 20px;
-    padding: 0;
-    display: flex;
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
 }
 
-.topnav ul li {
-    padding: 50px;
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
 }
 
-.navbar-container li {
-    list-style-type: none;
-}
-
-.topnav ul li a {
-    font-family: "Kavoon", serif;
-    font-size: 24px;
-    font-weight: 400px;
-    line-height: 30px;
-}
-
-
-.underline {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    background-color: #007bff;
-    transition: left 0.3s ease, width 0.3s ease;
-}
-
-.active~.underline {
-    left: calc(100% * (2));
-    width: 100%;
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 @media screen and (max-width: 1024px) {
@@ -111,108 +104,86 @@
     }
 
     .topnav a {
-        left: 50%;
-        transform: translateX(-50%);
-        top: 20px;
         font-size: 16px;
         padding: 14px 14px;
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: block;
+        position: relative;
+        bottom: 250px;
+        left: 10px;
+        z-index: 1001;
+    }
 
-    /* .navbar-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        padding-top: 24px;
-        padding-left: 250px;
-        gap: 50px;
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    /* .topnav {
         position: fixed;
-        z-index: 1000;
+        top: 60px;
+        left: -100%;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 60px);
+        gap: 0;
+        background-color: #B18316;
+        text-align: center;
+        transition: 0.3s;
     } */
 
-    nav {
-        padding: 1rem;
-        display: flex;
-        background-color: rgb(34, 37, 49);
-    }
-
-    .ham-menu {
-        height: 50px;
-        width: 50px;
-        margin-left: auto;
-        position: relative;
-    }
-
-    .ham-menu span {
-        height: 5px;
-        width: 100%;
-        background-color: #007bff;
-        border-radius: 25px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        transition: .3 ease;
-    }
-
-    .ham-menu span:nth-child(1) {
-        top: 25%;
-    }
-
-    .ham-menu span:nth-child(3) {
-        top: 75%;
-    }
-
-    .ham-menu.active span:nth-child(1) {
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(45deg);
-    }
-
-    .ham-menu.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .ham-menu.active span:nth-child(3) {
-        top: 50%;
-        transform: translate(-50%, 50%) rotate(-45deg);
-    }
+    /* .Logo {
+        position: fixed;
+        bottom: 795px;
+    } */
 
     .topnav {
-        width: 80%;
         position: fixed;
-        left: 25px;
-        height: 50px;
-        border-radius: 20px;
-        padding: 0 20px;
-        padding-bottom: 10px;
+        top: 50px;
+        left: 0%;
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #a67924;
+        padding: 20px 40px;
+        /* background-color: rgba(0, 0, 0, 0.9); */
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
     }
 
-    .topnav a {
-        padding-top: 60px;
-        justify-content: space-around;
-        text-align: center;
-        font-size: 14px;
-        padding: 8px 10px;
-    }
-
-    .Logo {
-        padding-top: 60px;
-        position: fixed;
-        top: 23px;
-        left: 149px;
-        width: 100px;
-        height: 50px;
+    .topnav.active {
+        /* left: 0; */
+        transform: translateX(0);
+        display: block;
     }
 
     .topnav ul {
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        /* width: 100%; */
     }
 
-    .topnav li {
-        margin: 0 5px;
+    .topnav ul li {
+        /* padding: 10px 0;
+        list-style-type: none; */
+        margin: 10px 0;
+    }
+
+    .topnav ul li a {
+        font-size: 18px;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    .bar {
+        background-color: black;
     }
 }

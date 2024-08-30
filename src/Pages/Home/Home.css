@@ -35,7 +35,7 @@ html, body {
     font-family: "Kavoon", "serif";
     font-size: 50px;
     font-weight: bold;
-    color: #a67924;
+    color: white;
     margin-bottom: 20px;
 }
 
@@ -157,6 +157,10 @@ html, body {
         font-size: 30px;
         margin-bottom: 10px;
 
+    }
+
+    .title1 p {
+        padding-left: 10px;
     }
 
     .description1 {
